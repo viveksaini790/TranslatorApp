@@ -1,0 +1,44 @@
+.container {
+    height: 200px;
+    width: 55%;
+    background-color: rgb(168, 146, 255);
+    margin: 40px auto;   /* Center horizontally */
+    border-top-left-radius: 50px;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Button container */
+.btn {
+    display: flex;
+    justify-content: center;     /* Center button horizontally */
+    margin-top: 40px;
+}
+
+/* Actual button styling */
+.btn button {
+    padding: 12px 28px;
+    background-color: #4db3e2;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.btn button:hover {
+    background-color: #2498c9;
+    transform: translateY(-2px);
+}

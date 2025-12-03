@@ -1,0 +1,23 @@
+/* App Wrapper */
+.app-wrapper {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    background: #f0f4f8;
+    color: #333;
+}
+
+/* Heading or message */
+.h {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+}
+
