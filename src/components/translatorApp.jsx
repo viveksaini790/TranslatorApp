@@ -143,7 +143,7 @@ const handleTranslate = async () => {
                     <div className="text2 "> {charCount}/{maxChars}</div>
                 </div>
                 <button onClick={handleTranslate}
-                    className=" abcd"><MdKeyboardDoubleArrowDown   onClick={handleTranslate}  /> </button>
+                    className=" abcd"><MdKeyboardDoubleArrowDown   onClick={handleTranslate}  /> Click for translate</button>
                 <div className=" only">
                     <textarea value={translatedText} readOnly></textarea>
                 </div>
