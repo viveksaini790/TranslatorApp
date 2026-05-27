@@ -113,7 +113,7 @@ const handleTranslate = async () => {
     return (
         <>
             <div className="app">I am translatorApp
-                <button onClick={onClose}><ImCross /> </button>
+              &nbsp  <button onClick={onClose}> Back to home<ImCross /> </button>
                 <div className="space ">
                     
                     <div className="language " onClick={() => handleLanguageClick("from")}>
@@ -121,7 +121,7 @@ const handleTranslate = async () => {
                          </div>
                     <TbTransfer onClick={handleSwapClick} />
                     <div className="language " onClick={() => handleLanguageClick("to")}>
-                        { languages[selectLangaugeTo] || "English"}
+                        { languages[selectLangaugeTo] || "English"} ↓
                          </div>
                 </div>
                 {showLanguages && (<div ref={dropDownRef}
@@ -143,7 +143,7 @@ const handleTranslate = async () => {
                     <div className="text2 "> {charCount}/{maxChars}</div>
                 </div>
                 <button onClick={handleTranslate}
-                    className=" abcd"><MdKeyboardDoubleArrowDown   onClick={handleTranslate}  /> Click for translate</button>
+                    className=" abcd"><MdKeyboardDoubleArrowDown   onClick={handleTranslate}  /> ↓ Click for translate</button>
                 <div className=" only">
                     <textarea value={translatedText} readOnly></textarea>
                 </div>
