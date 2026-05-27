@@ -112,7 +112,7 @@ const handleTranslate = async () => {
 
     return (
         <>
-            <div className="app">I am translatorApp
+            <div className="app">I am translatorApp viveksaini
               &nbsp  <button onClick={onClose}> Back to home<ImCross /> </button>
                 <div className="space ">
                     
