@@ -1,8 +1,8 @@
-.container {
+/* .container {
     height: 200px;
     width: 55%;
     background-color: rgb(168, 146, 255);
-    margin: 40px auto;   /* Center horizontally */
+    margin: 40px auto;   
     border-top-left-radius: 50px;
     border-top-right-radius: 70px;
     border-bottom-left-radius: 70px;
@@ -17,14 +17,13 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-/* Button container */
+
 .btn {
     display: flex;
-    justify-content: center;     /* Center button horizontally */
+    justify-content: center;   
     margin-top: 40px;
 }
 
-/* Actual button styling */
 .btn button {
     padding: 12px 28px;
     background-color: #4db3e2;
@@ -37,8 +36,134 @@
     transition: 0.2s ease-in-out;
 }
 
-/* Hover effect */
+
 .btn button:hover {
     background-color: #2498c9;
     transform: translateY(-2px);
+} */
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+    width: 55%;
+    min-height: 200px;
+    background-color: rgb(168, 146, 255);
+    margin: 40px auto;
+    padding: 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+    box-sizing: border-box;
+}
+
+/* =========================
+   TEXT INSIDE CONTAINER
+========================= */
+
+.container span {
+    word-break: break-word;
+}
+
+/* =========================
+   BUTTON SECTION
+========================= */
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* =========================
+   BUTTON STYLE
+========================= */
+
+.btn button {
+    padding: 12px 28px;
+    background-color: #4db3e2;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+
+/* =========================
+   BUTTON HOVER
+========================= */
+
+.btn button:hover {
+    background-color: #2498c9;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   TABLET RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 80%;
+        min-height: 180px;
+        font-size: 20px;
+        padding: 18px;
+    }
+
+    .btn button {
+        font-size: 16px;
+        padding: 10px 24px;
+    }
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 92%;
+        min-height: 160px;
+
+        font-size: 18px;
+
+        padding: 15px;
+
+        border-top-left-radius: 35px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .btn {
+        margin-top: 25px;
+    }
+
+    .btn button {
+        width: 90%;
+        max-width: 250px;
+
+        font-size: 15px;
+
+        padding: 10px 20px;
+    }
 }

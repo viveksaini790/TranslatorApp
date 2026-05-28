@@ -10,7 +10,7 @@ const maxChars = 200;
 
 function translatorApp({ onClose }) {
 
-    const [translatedText, settranslatedText] = useState("");
+    const [translatedText, settranslatedText] = useState(""); 
     const [selectLangaugeFrom, setselectLanguageFrom] = useState('en');
     const [selectLangaugeTo, setselectLanguageTo] = useState("hi");
     const [showLanguages, setshowLanguages] = useState(false);
@@ -112,30 +112,30 @@ const handleTranslate = async () => {
 
     return (
         <>
-            <div className="app">I am translatorApp viveksaini
-              &nbsp  <button onClick={onClose}> Back to home<ImCross /> </button>
+            <div className="app">I am translatorApp 
+                  <button onClick={onClose}> Back to home<ImCross /> </button>
                 <div className="space ">
                     
                     <div className="language " onClick={() => handleLanguageClick("from")}>
                         {languages [selectLangaugeFrom] || "English"}
                          </div>
                     <TbTransfer onClick={handleSwapClick} />
-                    <div className="language " onClick={() => handleLanguageClick("to")}>
-                        { languages[selectLangaugeTo] || "English"} ↓
+                    <div className="language2 " onClick={() => handleLanguageClick("to")}>
+                        <button>{ languages[selectLangaugeTo] || "English"} ↓</button>
                          </div>
                 </div>
                 {showLanguages && (<div ref={dropDownRef}
                     className="w-[calc(100%-4rem)] h-[calc(100%-9rem)] absolute top-32 left-8 z-10 rounded shadow-lg p-4 overflow-y-scroll scrollbar-hide">
 
-                    <ul>
+                    <ol>
                         {Object.entries(languages).map(([code, name]) => (
                             <li className="i1" onClick={() => handleLanguageSelect(code)} key={code}>
                                 {name}
                             </li>
                         ))}
 
-                        <li />
-                    </ul>
+                        {/* <li /> */}
+                    </ol>
                 </div>)}
                 <div className="text">
                     <textarea value={inputText || ""} onChange={handleInputTextChange} name="text1" id="t"
@@ -143,7 +143,7 @@ const handleTranslate = async () => {
                     <div className="text2 "> {charCount}/{maxChars}</div>
                 </div>
                 <button onClick={handleTranslate}
-                    className=" abcd"><MdKeyboardDoubleArrowDown   onClick={handleTranslate}  /> ↓ Click for translate</button>
+                    className=" abcd"><MdKeyboardDoubleArrowDown   onClick={handleTranslate}  /> ↓ Click</button>
                 <div className=" only">
                     <textarea value={translatedText} readOnly></textarea>
                 </div>

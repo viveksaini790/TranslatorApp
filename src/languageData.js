@@ -5,5 +5,5 @@ export const languages={
     'de-DE': 'German',
     'fr-FR': 'French',
     'en-GB': 'English',
-    'hi-IN': 'Hindi'
-}
+    'hi-IN': 'Hindi',
+    'es-ES': 'Spanish',}
